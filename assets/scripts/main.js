@@ -49,7 +49,11 @@ function openMenu(){
 function closeMenu(){
   document.body.classList.remove('menu-expanded')
 }
-ScrollReveal().reveal(`#main,.cont-statistics,img, #services header, .card, #about header, #about .content, #contato header, #contato .content`);
+ScrollReveal({
+  origin: 'bottom',
+  duration: 700,
+  distance: '50px',
+}).reveal(`#main,.cont-statistics,img, #services header, .card, #about header, #about .content, #contato header, #contato .content`);
 
 
 function showToTop(){
